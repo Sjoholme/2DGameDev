@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f99d6d198101a2a43a8387a30b83684b
+guid: cae5d840bb445cd43ad31f9ac8de82b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2410671940745902572
-    second: Sky_0
+      213: -5421872573110903762
+    second: Backround_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -165,13 +165,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sky_0
+      name: Backround_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3024
-        height: 1024
+        width: 14999
+        height: 2373
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce9392a9b5d647120800000000000000
-      internalID: 2410671940745902572
+      spriteID: e2c9a4efe93a1c4b0800000000000000
+      internalID: -5421872573110903762
       vertices: []
       indices: 
       edges: []
@@ -196,7 +196,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sky_0: 2410671940745902572
+      Backround_0: -5421872573110903762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
