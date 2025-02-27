@@ -1055,6 +1055,125 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8857261, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &375924770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375924771}
+  - component: {fileID: 375924774}
+  - component: {fileID: 375924773}
+  - component: {fileID: 375924772}
+  m_Layer: 5
+  m_Name: DialogueBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &375924771
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375924770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1045181044}
+  m_Father: {fileID: 1314552793}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -26, y: -219}
+  m_SizeDelta: {x: 800, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &375924772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375924770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e91636c0519d64c9b0f09afa154219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1045181045}
+  lines:
+  - Flag?
+  - What do you mean 'where's the flag?'
+  - There is no flag you idiot.
+  - You think you can just hop around like a mountain goat and get rewarded for it?
+  - That's not how the world works.
+  - The ones who try don't always get rewarded.
+  - In fact, its the ones who try that end up loosing the most.
+  - Think about your life...
+  - You try hard in school and at work but loose your time.
+  - You get the bare minimum to pay off the existence you didn't ask for.
+  - And how does the rest of the world respond?
+  - Your effort becomes their standard, and if you do anything but, you're considered
+    slacking...
+  - Slacking in keeping the gears of other's lavish lives rolling.
+  - But what if you dont try to start with?
+  - What if in the beginning you throw it all away...
+  - Throw away the job, throw away the kids
+  - Throw it and pick up a beer.
+  - Nobody expects something from a societal reject.
+  - It may not be lavish, but why live lavishly for a few minutes when our souls
+    will vanish for eternity after.
+  - We're all just going to become consciousless space dust eventually.
+  - Doesn't matter the tax bracket or the nationality, we'll all be floating particles
+    together.
+  - So think about how much effort you put in next time...
+  - Cause as you lay dying, you'll see
+  - There is no flag at the finish line.
+  textSpeed: 0.05
+--- !u!114 &375924773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375924770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7629035224341369680, guid: d23cfd6089542d3408ebd2698a2a45d0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &375924774
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375924770}
+  m_CullTransparentMesh: 1
 --- !u!1 &564325121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1667,8 @@ GameObject:
   m_Component:
   - component: {fileID: 894461199}
   - component: {fileID: 894461198}
+  - component: {fileID: 894461201}
+  - component: {fileID: 894461200}
   m_Layer: 0
   m_Name: Toes_0 (1)
   m_TagString: Untagged
@@ -1624,6 +1745,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894461200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894461197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9f9d4e71218144ca692b5b50ff221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 375924770}
+--- !u!61 &894461201
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894461197}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.9865351, y: 0.91430855}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 14.08, y: 20.96}
+    newSize: {x: 2.78, y: 4.14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 36.93773, y: 22.788616}
+  m_EdgeRadius: 0
 --- !u!1 &939169337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,113 +2156,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8857261, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1032311951
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1032311953}
-  - component: {fileID: 1032311952}
-  - component: {fileID: 1032311954}
-  m_Layer: 0
-  m_Name: Dialog Box
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1032311952
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032311951}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 7629035224341369680, guid: d23cfd6089542d3408ebd2698a2a45d0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 14, y: 4.98}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1032311953
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032311951}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.18, y: -2.72, z: 0}
-  m_LocalScale: {x: 0.3257352, y: 0.3257352, z: 0.3257352}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1314552793}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1032311954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032311951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0e91636c0519d64c9b0f09afa154219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 1045181045}
-  lines:
-  - Oh Lord is it working?
-  - I think it is?
-  - Lets try
-  - Imkfjdhkjfhzkdjfhzfdkjhkfghjghjgkjshdgfzjhgdsfjhgdfzjhgdfshgdhgfjsdhgfsjhgdfsjgf
-  textSpeed: 5
 --- !u!1 &1045181043
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,17 +2181,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045181043}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1314552793}
+  m_Father: {fileID: 375924771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -409.88, y: -260.18}
-  m_SizeDelta: {x: 3.8, y: 1.2}
+  m_AnchoredPosition: {x: -1, y: 14.4}
+  m_SizeDelta: {x: 450, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045181045
 MonoBehaviour:
@@ -2140,7 +2213,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: This is dialogue!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5acdfc3804e6b3c4e83ca0a08adbbd08, type: 2}
   m_sharedMaterial: {fileID: 955655771164844603, guid: 5acdfc3804e6b3c4e83ca0a08adbbd08, type: 2}
@@ -2167,8 +2240,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.2
-  m_fontSizeBase: 0.2
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2540,8 +2613,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1045181044}
-  m_Father: {fileID: 1032311953}
+  - {fileID: 375924771}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2886,10 +2959,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e3fa359c4493840bba9a06cc6e5e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMax: 55
-  yMax: 1.3
-  xMin: -5
-  yMin: -2.4
+  xMax: 47
+  yMax: 0
+  xMin: -3
+  yMin: 0
 --- !u!114 &1503365798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,7 +3050,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 3.4333334
+  orthographic size: 4.4333334
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3564,7 +3637,7 @@ Transform:
   m_GameObject: {fileID: 1698155991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.82, y: -0.74, z: 0}
+  m_LocalPosition: {x: -7.66, y: -0.07, z: 0}
   m_LocalScale: {x: 0.77903, y: 0.77903, z: 0.77903}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4401,5 +4474,5 @@ SceneRoots:
   - {fileID: 1136172873}
   - {fileID: 945337877}
   - {fileID: 811059046}
-  - {fileID: 1032311953}
+  - {fileID: 1314552793}
   - {fileID: 1831558777}

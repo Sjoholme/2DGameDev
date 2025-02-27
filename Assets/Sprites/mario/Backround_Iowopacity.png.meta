@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Backround_Iowopacity_0: 8921232029871436707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
