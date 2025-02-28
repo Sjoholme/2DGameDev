@@ -7,20 +7,22 @@ public class Pipe : MonoBehaviour
     public Vector3 enterDirection = Vector3.down;
     public Vector3 exitDirection = Vector3.zero;
 
-    private void OnCollisionStay2D(Collider2D other)
+    /* MOVED THIS FUNCTION TO CHARACTER.CS nvm CHARANIM.CS
+    private void OnCollisionStay2D(Collision2D other)
     {
-        if (connection != null && other.CompareTag("Player"))
+        if (connection != null && other.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKey(enterKeyCode) && other.TryGetComponent(out Character Character))
+            if (Input.GetKey(enterKeyCode) && other.gameObject.TryGetComponent(out Character Character))
             {
                 StartCoroutine(Enter(Character));
             }
         }
     }
+    */
 
-    private IEnumerator Enter(Character Character)
+    public IEnumerator Enter(Rigidbody2D Character)
     {
-        Character.SetMovementEnabled(false);
+        Character.isKinematic = true;
 
         Vector3 enteredPosition = transform.position + enterDirection;
         Vector3 enteredScale = Vector3.one * 0.5f;
@@ -42,7 +44,7 @@ public class Pipe : MonoBehaviour
             Character.transform.localScale = Vector3.one;
         }
 
-        Character.SetMovementEnabled(true);
+        Character.isKinematic = false;
     }
 
     private IEnumerator Move(Transform Character, Vector3 endPosition, Vector3 endScale)

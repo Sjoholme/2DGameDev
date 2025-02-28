@@ -23,7 +23,27 @@ public class CharAnim : MonoBehaviour {
     private Animator anim;
 
 	// Use this for initialization
-	void Start () {
+	
+        private void OnTriggerStay2D(Collider2D other)
+    {
+        Debug.Log("trigger stay");
+        if (!other.GetComponent<Pipe>()){
+            Debug.Log("not a pipe");
+            return;
+        }
+        if (other.GetComponent<Pipe>().connection != null)
+        {
+            Debug.Log("is a pipe");
+            if (Input.GetKey(other.GetComponent<Pipe>().enterKeyCode))
+            {
+                Debug.Log("start coroutine");
+                StartCoroutine(other.GetComponent<Pipe>().Enter(rb));
+            }
+        }
+    }
+
+    
+    void Start () {
 
         anim = GetComponent<Animator>();
         extraJumps = extraJumpsValue;
