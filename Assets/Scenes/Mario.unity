@@ -1414,7 +1414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645876912}
   - component: {fileID: 645876911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pipe_exit_collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3780,7 +3780,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 3.9133334
+  orthographic size: 3.4633334
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
