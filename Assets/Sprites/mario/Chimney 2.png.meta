@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chimney 2_0: 3113037243253357160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

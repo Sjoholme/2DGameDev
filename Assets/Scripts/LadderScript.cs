@@ -10,12 +10,14 @@ public class LadderScript : MonoBehaviour
     private float speed = 6;
     private bool isLadder;
     private bool isClimbing;
+    private Animator anim;
 
     private Rigidbody2D rb;
 
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -26,7 +28,8 @@ public class LadderScript : MonoBehaviour
 
         if (isLadder && Mathf.Abs(vertical) > 0f)
         {
-            isClimbing = true;
+            //isClimbing = true; 
+            anim.SetBool("isClimbing", true);
         }
     }
 
