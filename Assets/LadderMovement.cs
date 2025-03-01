@@ -6,9 +6,15 @@ public class LadderMovement : MonoBehaviour
     private float speed = 8f;
     private bool isLadder;
     private bool isClimbing;
+    private Animator anim;
 
     [SerializeField] private Rigidbody2D rb;
 
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     void Update()
     {
         vertical = Input.GetAxisRaw("Vertical");
@@ -16,6 +22,11 @@ public class LadderMovement : MonoBehaviour
         if (isLadder && Mathf.Abs(vertical) > 0f)
         {
             isClimbing = true;
+            anim.SetBool("isClimbing", true);
+        }
+        if(!isLadder)
+        {
+            anim.SetBool("isClimbing", false);
         }
     }
 

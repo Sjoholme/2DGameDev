@@ -24,10 +24,13 @@ public class LadderScript : MonoBehaviour
 
     void Update()
     {
-        vertical = Input.GetAxis("Vertical");
+        vertical = Input.GetAxis("vertical");
+
+        Debug.Log(vertical);
 
         if (isLadder && Mathf.Abs(vertical) > 0f)
         {
+            Debug.Log("QAHWDFJOIAEJKMF");
             //isClimbing = true; 
             anim.SetBool("isClimbing", true);
         }
